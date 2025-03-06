@@ -22,6 +22,11 @@ export default function Home() {
         <li>
           <a href="http://github.com/heygourab">Github</a>
         </li>
+        <li>
+          <a href="https://www.upwork.com/freelancers/~01e5c2e730d8114ebc?mp_source=share">
+            Hire me.
+          </a>
+        </li>
       </ul>
     </>
   );

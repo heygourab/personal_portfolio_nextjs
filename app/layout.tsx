@@ -8,7 +8,7 @@ const generalSan = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Gourab S. | Portfolio",
+  title: "Gourab S.",
   description:
     "Full-stack developer specializing in Next.js, Flutter, and AI solutions. Experienced in building modern web applications, mobile apps, and RAG systems. Expertise in MongoDB, PostgreSQL, and UI/UX development with Tailwind CSS.",
   keywords: [
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "Heygourab",
   ],
   openGraph: {
-    title: "Gourab S. | Full-stack Developer Portfolio",
+    title: "Gourab S.",
     description:
       "Full-stack developer specializing in Next.js, Flutter, and AI solutions. View my projects and technical expertise.",
     type: "website",
@@ -42,8 +42,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${generalSan.className} antialiased`}>
-        <div className="flex flex-col justify-between p-8 pt-0 min-h-screen">
-          <main className="max-w[60ch] w-full flex flex-col mx-auto">
+        <div className="flex flex-col justify-between p-8 pt-0 md:pt-8 min-h-screen">
+          <main className="max-w-[60ch] w-full flex flex-col mx-auto">
             {children}
           </main>
           <footer className="flex  justify-between items-start mt-12 text-sm pb-4">

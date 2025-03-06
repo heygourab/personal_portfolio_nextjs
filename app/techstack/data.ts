@@ -3,6 +3,7 @@ export enum TechCategory {
   STYLING = "Styling & Animation",
   DATABASE = "Database & ORM",
   AI = "AI",
+  BACKEND = "Backend",
 }
 
 export interface TechItem {
@@ -48,6 +49,16 @@ export const techStackData: TechSection[] = [
         title: "GSAP",
         description:
           "I use GSAP for creating complex animations and interactive experiences.",
+      },
+    ],
+  },
+  {
+    category: TechCategory.BACKEND,
+    items: [
+      {
+        title: "Node.js",
+        description:
+          "I use Node.js for building scalable backend services and APIs.",
       },
     ],
   },

@@ -51,7 +51,6 @@ export default function Page() {
           Learning.
         </p>
       </header>
-
       {techStackData.map((section) => (
         <TechSection
           key={section.category}

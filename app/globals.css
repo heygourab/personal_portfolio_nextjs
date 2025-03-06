@@ -3,7 +3,7 @@
 /* light mode */
 :root {
   --background: #e5e1ce;
-  --foreground: #222;
+  --foreground: #0b1014;
 }
 
 @theme inline {
@@ -16,7 +16,7 @@
 /* dark model */
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #222;
+    --background: #0b1014;
     --foreground: #e5e1ce;
   }
 }

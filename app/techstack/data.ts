@@ -4,6 +4,7 @@ export enum TechCategory {
   DATABASE = "Database & ORM",
   AI = "AI",
   BACKEND = "Backend",
+  LIBRARIES = "Libraries",
 }
 
 export interface TechItem {
@@ -59,6 +60,15 @@ export const techStackData: TechSection[] = [
         title: "Node.js",
         description:
           "I use Node.js for building scalable backend services and APIs.",
+      },
+    ],
+  },
+  {
+    category: TechCategory.LIBRARIES,
+    items: [
+      {
+        title: "ZOD",
+        description: "While TypeScript provides strong type checking, runtime data validation can still be tricky. That's why I use Zod - it makes data validation simple, type-safe, and reliable across my projects.",
       },
     ],
   },

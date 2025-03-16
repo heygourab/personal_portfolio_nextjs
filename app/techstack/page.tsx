@@ -1,3 +1,4 @@
+import { AnimatedTitle } from "../components/AnimatedTitle";
 import { techStackData, TechItem as TechItemType } from "./data";
 
 const TechItem = ({
@@ -13,7 +14,7 @@ const TechItem = ({
     <h3 className="text-lg font-semibold tracking-wide">
       {index}. {title}
     </h3>
-    <p className="text-pretty tracking-wide text-sm font-medium">
+    <p className="text-pretty tracking-wide text-sm text-[#e0e0e0] font-medium">
       {description}
     </p>
   </div>
@@ -45,7 +46,9 @@ export default function Page() {
   return (
     <div className="space-y-4">
       <header>
-        <h1 className="text-3xl font-bold mt-12 tracking-wide">Tech stack</h1>
+        <h1 className="text-3xl font-bold mt-12 tracking-wide">
+          <AnimatedTitle title="Tech Stack" />
+        </h1>
         <p className="mt-2 text-pretty tracking-wide text-sm">
           Here&apos;s where i spend most of time, Building, Testing and
           Learning.

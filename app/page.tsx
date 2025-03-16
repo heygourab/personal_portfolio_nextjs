@@ -1,17 +1,14 @@
 import Link from "next/link";
+import { AnimatedTextIntro } from "./components/AnimatedTextIntro";
 
 export default function Home() {
   return (
     <>
-      <h1 className="text-4xl mt-8 md:mt-12 font-semibold  tracking-wide">
+      <h1 className="text-2xl md:text-3xl text-balance mt-8 md:mt-12 font-semibold tracking-wide">
         Gourab S.
       </h1>
-      <p className="mt-4 text-pretty tracking-wide text-sm">
-        Hi! I&apos;m Gourab, a developer dedicated to crafting beautiful UIs and
-        delivering better user experiences. I write clean, efficient, and
-        maintainable code and love solving complex problems.
-      </p>
-      <ul className="mt-8 font-medium text-xl underline list-disc list-inside underline-offset-2 space-y-2 decoration-1">
+      <AnimatedTextIntro />
+      <ul className="mt-8 font-medium text-base underline list-disc list-inside underline-offset-2 space-y-2 decoration-1 text-[#e0e0e0]">
         <li>
           <Link href="/techstack">Tech Stack</Link>
         </li>

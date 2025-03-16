@@ -97,12 +97,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <Head>
-        <meta
-          name="google-site-verification"
-          content="e3Rtlfe9uOCHudYRqJXEef-DmnHrB6jFPBDZ8Re6O6o"
-        />
-      </Head>
       <body className={`${generalSan.className} antialiased`}>
         <div className="flex flex-col justify-between p-8 pt-0 md:pt-8 min-h-screen">
           <main className="max-w-[65ch] w-full flex flex-col mx-auto">

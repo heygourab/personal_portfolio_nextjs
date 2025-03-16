@@ -34,7 +34,7 @@ export const metadata: Metadata = {
   },
 };
 
-export function Footer() {
+function Footer() {
   return (
     <footer className="flex flex-col md:flex-row md:justify-center md:space-x-8  space-y-2 justify-between items-start mt-12 text-base pb-4">
       <div>

@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
 import "./globals.css";
+import Head from "next/head";
 
 const generalSan = localFont({
   src: "../public/GeneralSans-Regular.woff2",
@@ -93,6 +94,12 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <Head>
+        <meta
+          name="google-site-verification"
+          content="e3Rtlfe9uOCHudYRqJXEef-DmnHrB6jFPBDZ8Re6O6o"
+        />
+      </Head>
       <body className={`${generalSan.className} antialiased`}>
         <div className="flex flex-col justify-between p-8 pt-0 md:pt-8 min-h-screen">
           <main className="max-w-[65ch] w-full flex flex-col mx-auto">

@@ -33,6 +33,9 @@ export const metadata: Metadata = {
       "Full-stack developer specializing in Next.js, Flutter, and AI solutions. View my projects and technical expertise.",
     type: "website",
   },
+  verification: {
+    google: "e3Rtlfe9uOCHudYRqJXEef-DmnHrB6jFPBDZ8Re6O6o",
+  },
 };
 
 function Footer() {

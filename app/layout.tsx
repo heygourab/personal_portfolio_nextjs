@@ -33,7 +33,7 @@ export const metadata: Metadata = {
     type: "website",
   },
   verification: {
-    google: "e3Rtlfe9uOCHudYRqJXEef-DmnHrB6jFPBDZ8Re6O6o",
+    google: "ARWp3X0opOMDCC4wwObbbB6gRrIZemaA5gBcHyTQfyY",
   },
 };
 

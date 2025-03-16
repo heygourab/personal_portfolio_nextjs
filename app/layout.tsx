@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 
 const generalSan = localFont({
   src: "../public/GeneralSans-Regular.woff2",

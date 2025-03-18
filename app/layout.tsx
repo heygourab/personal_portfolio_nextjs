@@ -4,33 +4,44 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const generalSan = localFont({
-  src: "../public/GeneralSans-Regular.woff2",
+  src: "../public/Satoshi-Regular.woff2",
 });
 
 export const metadata: Metadata = {
-  title: "Gourab S.",
+  title: "Gourab S. | Full-Stack Developer Portfolio",
   description:
-    "Full-stack developer specializing in Next.js, Flutter, and AI solutions. Experienced in building modern web applications, mobile apps, and RAG systems. Expertise in MongoDB, PostgreSQL, and UI/UX development with Tailwind CSS.",
+    "Gourab S. – Full-Stack Developer specializing in Next.js, Flutter, and AI solutions. Explore my projects in web development, mobile apps, and RAG systems.",
   keywords: [
-    "Full-stack developer",
-    "Next.js",
-    "Flutter",
-    "AI development",
+    "Gourab S.",
+    "Gourab Sarkar",
+    "Heygourab",
+    "Full-Stack Developer",
+    "Next.js Developer",
+    "Flutter Developer",
+    "AI Development",
+    "Web Development",
+    "Mobile App Development",
+    "RAG Systems",
     "MongoDB",
     "PostgreSQL",
-    "UI/UX design",
-    "Web development",
-    "Mobile apps",
+    "Tailwind CSS",
+    "UI/UX Design",
     "React",
     "Node.js",
-    "Gourab S.",
-    "Heygourab",
   ],
   openGraph: {
-    title: "Gourab S.",
+    title: "Gourab S. | Full-Stack Developer Portfolio",
     description:
-      "Full-stack developer specializing in Next.js, Flutter, and AI solutions. View my projects and technical expertise.",
+      "Discover Gourab S., a Full-Stack Developer skilled in Next.js, Flutter, and AI. View my portfolio of innovative web and mobile projects.",
     type: "website",
+    url: "https://heygourab.vercel.app/",
+    siteName: "Gourab S. Portfolio",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Gourab S. | Full-Stack Developer Portfolio",
+    description:
+      "Gourab S. – Full-Stack Developer with expertise in Next.js, Flutter, and AI. Check out my web and mobile projects!",
   },
   verification: {
     google: "ARWp3X0opOMDCC4wwObbbB6gRrIZemaA5gBcHyTQfyY",
@@ -39,11 +50,11 @@ export const metadata: Metadata = {
 
 function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row md:justify-center md:space-x-8  space-y-2 justify-between items-start mt-12 text-base pb-4">
+    <footer className="flex flex-col md:flex-row md:justify-center md:space-x-12  space-y-2 justify-between items-start mt-12 text-base pb-4">
       <div>
         <p className="font-semibold">Location:</p>
-        <address className="not-italic text-[#e0e0e0]">
-          India{" "}
+        <address className="not-italic text-[#e0e0e0] space-x-2 flex ">
+          <span>India</span>
           <a
             href="https://maps.app.goo.gl/8kz3z7h4qV8JqqmdA"
             className="hover:underline flex items-center cursor-pointer"
@@ -78,8 +89,7 @@ function Footer() {
           gourabblg901@gmail.com
         </a>
       </div>
-
-      <div className="space-y-1">
+      <div>
         <p className="font-semibold">Copyright</p>
         <p className="text-[#e0e0e0]">
           &copy; {new Date().getFullYear()} Gourab S.

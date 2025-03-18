@@ -14,6 +14,7 @@ export function AnimatedTextIntro() {
           animationDuration={animationDuration}
           animationDelay={350}
           padding={1}
+          strokeWidth={1.1}
         >
           Developer
         </RoughNotation>{" "}
@@ -24,6 +25,7 @@ export function AnimatedTextIntro() {
           color={animationColor}
           animationDuration={animationDuration}
           animationDelay={550}
+          strokeWidth={1.1}
         >
           efficient
         </RoughNotation>
@@ -33,15 +35,17 @@ export function AnimatedTextIntro() {
           color={animationColor}
           animationDuration={animationDuration}
           animationDelay={650}
+          strokeWidth={1.1}
         >
           maintainable code
         </RoughNotation>{" "}
         and love solving complex{" "}
         <RoughNotation
           type="crossed-off"
-          color="#f24405"
+          color="#DE5849"
           animationDuration={animationDuration}
           animationDelay={750}
+          strokeWidth={1.1}
         >
           problems
         </RoughNotation>

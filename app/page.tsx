@@ -16,7 +16,7 @@ export default function Home() {
           <Link href="/project">Projects</Link>
         </li>
         <li>
-          <Link href="/blog">Blogs</Link>
+          <Link href="/blog">Blog</Link>
         </li>
         <li>
           <a href="http://github.com/heygourab">Github</a>

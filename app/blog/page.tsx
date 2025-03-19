@@ -1,7 +1,11 @@
+import { AnimatedTitle } from "../components/AnimatedTitle";
+
 export default function page() {
   return (
-    <div className="flex flex-col items-center justify-center h-screen">
-      <p>Cooking...</p>
-    </div>
+    <section>
+      <h1 className="text-3xl font-bold mt-12 tracking-wide">
+        <AnimatedTitle title={"My Blog"} />
+      </h1>
+    </section>
   );
 }

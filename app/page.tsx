@@ -3,20 +3,18 @@ import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 import Image from "next/image";
 import profilePicture from "../public/me.png";
 
-const NavItem = ({
-  href,
-  label,
-  external = false,
-}: {
+interface NavItemProps {
   href: string;
   label: string;
   external?: boolean;
-}) => {
-  const content = (
-    <span className="group flex items-center">
-      {label}
-      <ArrowUpRightIcon className="ml-2 size-4 transition-transform group-hover:translate-x-1" />
-    </span>
+}
+
+const NavItem = ({ href, label, external = false }: NavItemProps) => {
+  const classes =
+    "group inline-flex items-center underline underline-offset-2 decoration-1 font-semibold";
+
+  const icon = (
+    <ArrowUpRightIcon className="ml-1 size-4 transition-transform group-hover:translate-x-1" />
   );
 
   return (
@@ -24,15 +22,15 @@ const NavItem = ({
       {external ? (
         <a
           href={href}
-          className="inline-flex"
           target="_blank"
           rel="noopener noreferrer"
+          className={classes}
         >
-          {content}
+          {label} {icon}
         </a>
       ) : (
-        <Link href={href} className="inline-flex">
-          {content}
+        <Link href={href} className={classes}>
+          {label} {icon}
         </Link>
       )}
     </li>
@@ -42,18 +40,17 @@ const NavItem = ({
 export default function Home() {
   return (
     <>
-      <div className="mt-8 flex flex-col md:mt-12 md:text-3xl">
+      <div className="mt-8 flex flex-col items-start md:mt-12">
         <Image
           src={profilePicture}
-          alt={"Profile Picture of Gourab S."}
-          width={128}
-          height={128}
-          fetchPriority="high"
-          className="size-12 rounded-full border object-cover md:size-16"
+          alt="Profile picture of Gourab S."
+          width={80}
+          height={80}
+          priority
+          className="size-16 rounded-full border object-cover md:size-20"
         />
-
-        <h1 className="mt-4 text-2xl font-semibold tracking-wide text-balance">
-          Gourab S. – I Design, I Develop, I Deliver.
+        <h1 className="mt-4 text-2xl font-bold tracking-wide text-balance md:text-3xl">
+          Gourab S. — I Design, I Develop, I Deliver.
         </h1>
       </div>
       <p className="mt-4 text-sm text-pretty text-[#151b21] md:text-base">
@@ -63,12 +60,11 @@ export default function Home() {
         for web and mobile apps, making sure things look good and feel easy to
         use.
       </p>
-
-      <ul className="mt-8 space-y-2 text-base font-semibold underline decoration-1 underline-offset-2">
+      <ul className="mt-8 space-y-2">
         <NavItem href="/techstack" label="Tech Stack" />
         <NavItem href="/project" label="Projects" />
         <NavItem href="/blog" label="Blog" />
-        <NavItem href="https://github.com/heygourab" label="Github" external />
+        <NavItem href="https://github.com/heygourab" label="GitHub" external />
       </ul>
     </>
   );

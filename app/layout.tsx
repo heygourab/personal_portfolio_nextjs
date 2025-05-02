@@ -1,7 +1,7 @@
+import "./globals.css";
+import localFont from "next/font/local";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
-import localFont from "next/font/local";
-import "./globals.css";
 import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const generalSan = localFont({
@@ -11,7 +11,7 @@ const generalSan = localFont({
 export const metadata: Metadata = {
   title: "Gourab S. | Full-Stack Developer Portfolio",
   description:
-    "Gourab S. - Full-Stack Developer specializing in Next.js, Flutter, and AI solutions. Explore my projects in web development, mobile apps, and RAG systems.",
+    "Gourab S. - Full-Stack Developer specializing in Flutter, Next.js, and AI solutions. Explore my projects in web development, mobile apps, and RAG systems.",
   keywords: [
     "Gourab S.",
     "Gourab Sarkar",
@@ -96,7 +96,7 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${generalSan.className} antialiased`}>
         <div className="flex min-h-screen flex-col justify-between p-8 pt-0 md:pt-8">
-          <main className="mx-auto flex w-full max-w-[75ch] flex-col">
+          <main className="mx-auto flex w-full max-w-[72ch] flex-col">
             {children}
           </main>
           <Footer />

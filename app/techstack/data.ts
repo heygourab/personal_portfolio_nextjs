@@ -1,10 +1,8 @@
 export enum TechCategory {
   FRAMEWORKS = "Frameworks",
-  STYLING = "Styling & Animation",
   DATABASE = "Database & ORM",
-  AI = "AI",
+  AI = "AI Development",
   BACKEND = "Backend",
-  LIBRARIES = "Libraries",
 }
 
 export interface TechItem {
@@ -22,34 +20,15 @@ export const techStackData: TechSection[] = [
     category: TechCategory.FRAMEWORKS,
     items: [
       {
-        title: "Next.js",
-        description:
-          "I started Learning Next.js in June 2024 and since then I have been using it for all my web projects. I've fallen in love with this framework.",
-      },
-      {
         title: "Flutter",
         description:
-          "I created my first Hello World app in the year of 2021. Since then I have been using it for all my mobile projects.",
+          "My first “Hello World” in Flutter dates back to 2021 — and I haven't looked back since. From MVPs to production-ready apps, Flutter's cross-platform magic and UI flexibility have been my go-to for mobile development.",
       },
-    ],
-  },
-  {
-    category: TechCategory.STYLING,
-    items: [
+
       {
-        title: "Tailwind",
+        title: "Next.js",
         description:
-          "I craft beautiful user interfaces using Tailwind CSS, bringing life and polish to every project.",
-      },
-      {
-        title: "Framer Motion",
-        description:
-          "I use Framer Motion for creating fluid animations and delightful transitions.",
-      },
-      {
-        title: "GSAP",
-        description:
-          "I use GSAP for creating complex animations and interactive experiences.",
+          "I dived into Next.js in mid-2024 and instantly clicked with the framework. Server-side rendering, file-based routing, and the React ecosystem? Love at first deploy. It's now the backbone of all my web projects",
       },
     ],
   },
@@ -59,33 +38,22 @@ export const techStackData: TechSection[] = [
       {
         title: "Node.js",
         description:
-          "I use Node.js for building scalable backend services and APIs.",
+          "For scalable backend services and APIs, Node.js is my weapon of choice. JavaScript end-to-end? Yes, please. It lets me move fast and build confidently on the server side.",
       },
     ],
   },
-  {
-    category: TechCategory.LIBRARIES,
-    items: [
-      {
-        title: "ZOD",
-        description:
-          "While TypeScript provides strong type checking, runtime data validation can still be tricky. That's why I use Zod - it makes data validation simple, type-safe, and reliable across my projects.",
-      },
-    ],
-  },
+
   {
     category: TechCategory.AI,
     items: [
       {
         title: "OpenAI",
-        description: `I use OpenAi Api for all my Ai projects. It provides me with the
-        flexibility to create Ai models without worrying about the
-        infrastructure and scalability.`,
+        description: `I use the OpenAI API for all my AI-powered apps — from intelligent chatbots to text processors. It gives me the freedom to innovate without sweating infra or model tuning.`,
       },
       {
         title: "PyTorch",
         description:
-          "I'm currently learning PyTorch for creating custom Ai models.",
+          "When I want to get my hands dirty with neural networks, PyTorch is my lab. It’s where I build, train, and experiment with deep learning architectures.",
       },
     ],
   },

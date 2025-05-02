@@ -4,13 +4,13 @@ import localFont from "next/font/local";
 import "./globals.css";
 
 const generalSan = localFont({
-  src: "../public/Satoshi-Regular.woff2",
+  src: "../public/font/GeneralSans-Regular.woff2",
 });
 
 export const metadata: Metadata = {
   title: "Gourab S. | Full-Stack Developer Portfolio",
   description:
-    "Gourab S. – Full-Stack Developer specializing in Next.js, Flutter, and AI solutions. Explore my projects in web development, mobile apps, and RAG systems.",
+    "Gourab S. - Full-Stack Developer specializing in Next.js, Flutter, and AI solutions. Explore my projects in web development, mobile apps, and RAG systems.",
   keywords: [
     "Gourab S.",
     "Gourab Sarkar",
@@ -50,14 +50,14 @@ export const metadata: Metadata = {
 
 function Footer() {
   return (
-    <footer className="flex flex-col md:flex-row md:justify-center md:space-x-12  space-y-2 justify-between items-start mt-12 text-base pb-4">
+    <footer className="mt-12 flex flex-col items-start justify-between space-y-2 pb-4 text-base md:flex-row md:justify-center md:space-x-12">
       <div>
         <p className="font-semibold">Location:</p>
-        <address className="not-italic text-[#e0e0e0] space-x-2 flex ">
+        <address className="flex space-x-2 text-[#151b21] not-italic">
           <span>India</span>
           <a
             href="https://maps.app.goo.gl/8kz3z7h4qV8JqqmdA"
-            className="hover:underline flex items-center cursor-pointer"
+            className="flex cursor-pointer items-center hover:underline"
             target="_blank"
             rel="noopener noreferrer"
           >
@@ -68,7 +68,7 @@ function Footer() {
               viewBox="0 0 24 24"
               strokeWidth={1.5}
               stroke="currentColor"
-              className="size-4 ml-2"
+              className="ml-2 size-4"
             >
               <path
                 strokeLinecap="round"
@@ -84,14 +84,14 @@ function Footer() {
         <a
           href="mailto:gourabblg901@gmail.com"
           target="_blank"
-          className="hover:underline text-[#e0e0e0]"
+          className="text-[#151b21] hover:underline"
         >
           gourabblg901@gmail.com
         </a>
       </div>
       <div>
-        <p className="font-semibold">Copyright</p>
-        <p className="text-[#e0e0e0]">
+        <p className="font-semibold">Copyright:</p>
+        <p className="text-[#151b21]">
           &copy; {new Date().getFullYear()} Gourab S.
         </p>
       </div>
@@ -107,8 +107,8 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${generalSan.className} antialiased`}>
-        <div className="flex flex-col justify-between p-8 pt-0 md:pt-8 min-h-screen">
-          <main className="max-w-[65ch] w-full flex flex-col mx-auto">
+        <div className="flex min-h-screen flex-col justify-between p-8 pt-0 md:pt-8">
+          <main className="mx-auto flex w-full max-w-[75ch] flex-col">
             {children}
           </main>
           <Footer />

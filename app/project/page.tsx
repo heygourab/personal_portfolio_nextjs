@@ -1,6 +1,6 @@
 export default function page() {
   return (
-    <div className="flex flex-col h-screen items-center justify-center">
+    <div className="flex h-screen flex-col items-center justify-center">
       <p>Cooking...</p>
     </div>
   );

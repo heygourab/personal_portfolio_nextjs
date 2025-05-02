@@ -68,7 +68,8 @@ export const techStackData: TechSection[] = [
     items: [
       {
         title: "ZOD",
-        description: "While TypeScript provides strong type checking, runtime data validation can still be tricky. That's why I use Zod - it makes data validation simple, type-safe, and reliable across my projects.",
+        description:
+          "While TypeScript provides strong type checking, runtime data validation can still be tricky. That's why I use Zod - it makes data validation simple, type-safe, and reliable across my projects.",
       },
     ],
   },

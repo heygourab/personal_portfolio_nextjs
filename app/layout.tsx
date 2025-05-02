@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import localFont from "next/font/local";
 import "./globals.css";
+import { ArrowUpRightIcon } from "@heroicons/react/24/outline";
 
 const generalSan = localFont({
   src: "../public/font/GeneralSans-Regular.woff2",
@@ -53,7 +54,7 @@ function Footer() {
     <footer className="mt-12 flex flex-col items-start justify-between space-y-2 pb-4 text-base md:flex-row md:justify-center md:space-x-12">
       <div>
         <p className="font-semibold">Location:</p>
-        <address className="flex space-x-2 text-[#151b21] not-italic">
+        <address className="group flex space-x-2 text-[#151b21] not-italic">
           <span>India</span>
           <a
             href="https://maps.app.goo.gl/8kz3z7h4qV8JqqmdA"
@@ -62,20 +63,7 @@ function Footer() {
             rel="noopener noreferrer"
           >
             <span>25°13&apos;12.00&quot; N 88°46&apos;12.00&quot; E</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              strokeWidth={1.5}
-              stroke="currentColor"
-              className="ml-2 size-4"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                d="m4.5 19.5 15-15m0 0H8.25m11.25 0v11.25"
-              />
-            </svg>
+            <ArrowUpRightIcon className="ml-2 h-4 w-4 transition-transform group-hover:translate-x-1" />
           </a>
         </address>
       </div>

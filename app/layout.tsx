@@ -2,6 +2,7 @@ import "./globals.css";
 import localFont from "next/font/local";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { SpeedInsights } from "@vercel/speed-insights/next";
 
 const generalSan = localFont({
   src: "../public/font/GeneralSans-Regular.woff2",
@@ -60,6 +61,7 @@ export default function RootLayout({
           {children}
         </div>
         <Analytics />
+        <SpeedInsights />
       </body>
     </html>
   );

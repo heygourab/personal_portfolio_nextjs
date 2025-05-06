@@ -7,7 +7,7 @@ export default function MainLayout({
 }) {
   return (
     <>
-      <main className="mx-auto flex w-full max-w-[72ch] flex-col">
+      <main className="mx-auto flex w-full max-w-[84ch] flex-col">
         {children}
       </main>
       <FooterWrapper />

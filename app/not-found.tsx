@@ -10,9 +10,9 @@ export default function NotFound() {
       <Image
         src={notFoundGif}
         alt="Page not found"
-        width={500}
-        height={500}
-        className="shadow-md"
+        width={480}
+        height={270}
+        className=""
         priority
       />
       <h1 className="text-xl font-bold">Page Not Found | 404</h1>

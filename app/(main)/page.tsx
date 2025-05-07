@@ -29,6 +29,7 @@ export default function Home() {
         <NavItem href="/techstack" label="Tech Stack" />
         <NavItem href="/project" label="Projects" />
         <NavItem href="/blog" label="Blog" />
+        <NavItem href="https://heygourab.medium.com" label="Writing" external/>
         <NavItem href="https://github.com/heygourab" label="GitHub" external />
       </ul>
     </>

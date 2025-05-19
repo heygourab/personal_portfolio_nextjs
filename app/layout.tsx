@@ -1,12 +1,9 @@
 import "./globals.css";
-import localFont from "next/font/local";
+
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
 import { SpeedInsights } from "@vercel/speed-insights/next";
-
-const generalSan = localFont({
-  src: "../public/font/GeneralSans-Regular.woff2",
-});
+import { generalSan } from "./fonts";
 
 export const metadata: Metadata = {
   title: "Gourab S. | Full-Stack Developer Portfolio",
@@ -37,12 +34,6 @@ export const metadata: Metadata = {
     type: "website",
     url: "https://heygourab.vercel.app/",
     siteName: "Gourab S. Portfolio",
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Gourab S. | Full-Stack Developer Portfolio",
-    description:
-      "Gourab S. – Full-Stack Developer with expertise in Next.js, Flutter, and AI. Check out my web and mobile projects!",
   },
   verification: {
     google: "ARWp3X0opOMDCC4wwObbbB6gRrIZemaA5gBcHyTQfyY",

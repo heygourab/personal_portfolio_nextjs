@@ -1,6 +1,7 @@
 import Image from "next/image";
 import profilePicture from "@/public/me.png";
 import { NavItem } from "./ui/nav-item";
+import { zodiakSerif } from "../fonts";
 
 export default function Home() {
   return (
@@ -14,7 +15,9 @@ export default function Home() {
           priority
           className="size-16 rounded-full border object-cover md:size-20"
         />
-        <h1 className="mt-4 text-2xl font-bold tracking-wide text-balance md:text-3xl">
+        <h1
+          className={`${zodiakSerif.className} mt-4 text-2xl font-bold tracking-wide text-balance md:text-3xl`}
+        >
           Gourab S. — I Design, I Develop, I Deliver.
         </h1>
       </div>
@@ -29,7 +32,7 @@ export default function Home() {
         <NavItem href="/techstack" label="Tech Stack" />
         <NavItem href="/project" label="Projects" />
         <NavItem href="/blog" label="Blog" />
-        <NavItem href="https://heygourab.medium.com" label="Writing" external/>
+        <NavItem href="https://heygourab.medium.com" label="Writing" external />
         <NavItem href="https://github.com/heygourab" label="GitHub" external />
       </ul>
     </>

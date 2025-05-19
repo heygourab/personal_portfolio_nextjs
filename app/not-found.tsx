@@ -15,7 +15,7 @@ export default function NotFound() {
         className=""
         priority
       />
-      <h1 className="text-xl font-bold">Page Not Found | 404</h1>
+      <p className="text-xl font-bold">Page Not Found | 404</p>
       <Link href="/" className="font-bold underline underline-offset-2">
         Go Back
       </Link>

@@ -22,12 +22,12 @@ export const techStackData: TechSection[] = [
       {
         title: "Flutter",
         description:
-          "My first “Hello World” in Flutter dates back to 2021 — and I haven't looked back since. From MVPs to production-ready apps.",
+          "My love affair with Flutter started in 2021. It's like having a magic wand that poofs out native apps for everywhere (iOS, Android, web) from one codebase. Saves me from arguing with platform-specific quirks. Mostly :)",
       },
       {
         title: "Next.js",
         description:
-          "I dived into Next.js in mid-2024 and instantly clicked with the framework. Server-side rendering, file-based routing, and the React ecosystem? Love at first deploy.",
+          "Hopped on the Next.js in '24 and haven't been able to jump off - it's too fast.. moon! Building websites feels like I've unlocked a cheat code with its speed and built-in SEO smooth. Server components are just the cherry on top of this 'not needing therapy anymore.",
       },
     ],
   },
@@ -37,7 +37,7 @@ export const techStackData: TechSection[] = [
       {
         title: "Node.js",
         description:
-          "For scalable backend services and APIs, Node.js is my weapon of choice. JavaScript end-to-end? Yes, please. It lets me move fast and build confidently on the server side.",
+          "Node.js: Because who needs sleep when you can have JavaScript running your entire stack? It's my go-to for building backends that scale without making my server cry. Keeps me writing JS, keeps me sane (mostly).",
       },
     ],
   },
@@ -47,12 +47,12 @@ export const techStackData: TechSection[] = [
     items: [
       {
         title: "OpenAI",
-        description: `I use the OpenAI API for all my AI-powered apps — from intelligent chatbots to text processors. It gives me the freedom to innovate without sweating infra or model tuning.`,
+        description: `Integrating AI? Black magic and more like.`,
       },
       {
         title: "PyTorch",
         description:
-          "When I want to get my hands dirty with neural networks, PyTorch is my lab. It’s where I build, train, and experiment with deep learning architectures.",
+          "When I'm feeling brave and want to wrestle with tensors. DL Stuffs :)",
       },
     ],
   },

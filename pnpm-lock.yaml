@@ -47,6 +47,9 @@ importers:
       react-rough-notation:
         specifier: ^1.0.5
         version: 1.0.5(react-dom@19.1.0(react@19.1.0))(react@19.1.0)
+      rough-notation:
+        specifier: ^0.5.1
+        version: 0.5.1
     devDependencies:
       '@eslint/eslintrc':
         specifier: ^3

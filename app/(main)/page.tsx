@@ -1,7 +1,8 @@
 import Image from "next/image";
 import profilePicture from "@/public/me.png";
 import { NavItem } from "./ui/nav-item";
-import { zodiakSerif } from "../fonts";
+
+import Intro from "./components/intro";
 
 export default function Home() {
   return (
@@ -15,11 +16,7 @@ export default function Home() {
           priority
           className="size-16 rounded-full border object-cover md:size-20"
         />
-        <h1
-          className={`${zodiakSerif.className} mt-4 text-2xl font-bold tracking-wide text-balance md:text-3xl`}
-        >
-          Gourab S. — I Design, I Develop, I Deliver.
-        </h1>
+        <Intro />
       </div>
       <p className="mt-4 text-sm text-pretty text-[#151b21] md:text-base">
         I started as a Flutter developer, developing clean and responsive mobile

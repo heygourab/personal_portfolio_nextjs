@@ -1,3 +1,4 @@
+import { zodiakSerif } from "@/app/fonts";
 import { techStackData, TechItem as TechItemType } from "./data";
 
 interface TechItemProps {
@@ -40,8 +41,12 @@ export default function Page() {
   return (
     <div className="space-y-6">
       <header className="mt-12">
-        <h1 className="text-2xl font-bold tracking-wide">Tech Stack</h1>
-        <p className="mt-2 max-w-prose text-sm leading-relaxed tracking-wide text-[#151b21] md:text-base">
+        <h1
+          className={`${zodiakSerif.className} text-2xl font-bold tracking-wide md:text-3xl`}
+        >
+          Tech Stack
+        </h1>
+        <p className="mt-1 max-w-prose text-sm leading-relaxed tracking-wide text-[#151b21] md:text-base">
           Here&apos;s where I spend most of my time — building, testing, and
           learning.
         </p>

@@ -1,21 +1,29 @@
 import Image from "next/image";
 import profilePicture from "@/public/me.png";
 import { NavItem } from "./ui/nav-item";
-
+import * as motion from "motion/react-client";
 import Intro from "./components/intro";
 
 export default function Home() {
   return (
     <>
       <div className="mt-8 flex flex-col items-start md:mt-12">
-        <Image
-          src={profilePicture}
-          alt="Profile picture of Gourab S."
-          width={80}
-          height={80}
-          priority
-          className="size-16 rounded-full border object-cover md:size-20"
-        />
+        <motion.div
+          drag
+          dragElastic={0.35}
+          dragConstraints={{ left: 0, right: 0, top: 0, bottom: 0 }}
+          className="size-16 cursor-grab overflow-clip rounded-full object-cover shadow-lg shadow-[#fd510d]/20 active:cursor-grabbing md:size-20"
+        >
+          <Image
+            src={profilePicture}
+            alt="Profile picture of Gourab S."
+            width={80}
+            height={80}
+            priority
+            className="pointer-events-none object-cover select-none"
+            draggable={false}
+          />
+        </motion.div>
         <Intro />
       </div>
       <p className="mt-4 text-sm text-pretty text-[#151b21] md:text-base">

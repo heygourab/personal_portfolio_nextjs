@@ -1,4 +1,3 @@
-"use client";
 import { zodiakSerif } from "@/app/fonts";
 import { RoughNotation } from "react-rough-notation";
 

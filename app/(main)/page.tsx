@@ -26,7 +26,7 @@ export default function Home() {
         </motion.div>
         <Intro />
       </div>
-      <p className="mt-4 text-sm text-pretty text-[#151b21] md:text-base">
+      <p className="mt-4 text-sm text-pretty text-neutral-700 md:text-base">
         I started as a Flutter developer, developing clean and responsive mobile
         apps for both iOS & Android. Over time, I picked up both backend and
         frontend work, so now I handle a bit of everything. I also design UI/UX
